@@ -1,3 +1,7 @@
+/* --------------- Font import --------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 /* --------------- CSS Reset --------------- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -14,6 +18,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-primary)
 }
 
 img, picture, video, canvas, svg {
@@ -35,4 +40,26 @@ p, h1, h2, h3, h4, h5, h6 {
 
 li {
   list-style: none;
+}
+
+/* --------------- Variables --------------- */
+
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+
+  --fs-16: 1rem;
+  --fs-20: 1.5rem;
+  --fs-32: 2rem;
+  --fs-48: 3rem;
+  --fs-64: 4rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* --------------- Utility classes --------------- */
+
+.mg__inline {
+  padding-inline: 7rem;
 }

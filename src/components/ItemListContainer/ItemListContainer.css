@@ -1,0 +1,5 @@
+.itemList__container {
+    display: grid;
+    place-items: center;
+    padding-top: 5rem;
+}

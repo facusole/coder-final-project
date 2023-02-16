@@ -1,9 +1,9 @@
 .navbar__container {
-    margin-inline: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-block: 2rem;
+    background-color: hsl(195, 53%, 95%)
 }
 
 .brand__container {
@@ -18,12 +18,64 @@
     cursor: pointer;
 }
 
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.searchbar__input {
+    padding: .25rem;
+    border-radius: .25rem;
+    border: 1px solid hsl(195, 53%, 79%) ;
+    cursor: pointer;
+    width: 400px;
+}
+
+.searchbar__input:focus {
+    outline: transparent;
+    border: 2px solid hsl(195, 53%, 70%);
+}
+
 .menu__container {
     display: flex;
     gap: 2rem;
+
+    font-size: var(--fs-16);
+    font-weight: var(--fw-bold);
 }
 
 .categories {
     text-decoration: none;
     color: black;
+}
+
+.shopping__cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.hardcoded__number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(.6rem, .5rem);
+   
+}
+
+.bg__color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 1rem;
+    height: 1rem;
+    background: red;
+    opacity: .6;
+    color: white;
+    border-radius: 50%;
+    padding: .6125rem;   
 }

@@ -1,0 +1,29 @@
+.navbar__container {
+    margin-inline: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 2rem;
+}
+
+.brand__container {
+    display: flex;
+    gap: 1rem;
+}
+
+.brand__logo {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.menu__container {
+    display: flex;
+    gap: 2rem;
+}
+
+.categories {
+    text-decoration: none;
+    color: black;
+}

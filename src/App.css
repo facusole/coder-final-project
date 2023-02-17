@@ -75,7 +75,3 @@ li {
 .mg__inline {
   padding-inline: 7rem;
 }
-
-body {
-  background: var(--lightgray);
-}

@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding-block: 2rem;
-    background-color: hsl(195, 53%, 95%)
+    background-color: var(--lightblue);
 }
 
 .brand__container {
@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.brand__name {
+    color: var(--darkerblue);
+}
+
 .visually-hidden {
     position: absolute;
     overflow: hidden;
@@ -27,16 +31,16 @@
 }
 
 .searchbar__input {
-    padding: .25rem;
+    padding: .5rem;
     border-radius: .25rem;
-    border: 1px solid hsl(195, 53%, 79%) ;
+    border: 1px solid var(--lightblue) ;
     cursor: pointer;
     width: 400px;
 }
 
 .searchbar__input:focus {
     outline: transparent;
-    border: 2px solid hsl(195, 53%, 70%);
+    border: 2px solid var(--darkerblue);
 }
 
 .menu__container {
@@ -55,6 +59,10 @@
 .shopping__cart {
     position: relative;
     cursor: pointer;
+}
+
+.cart__icon {
+    color: var(--darkerblue);
 }
 
 .hardcoded__number {

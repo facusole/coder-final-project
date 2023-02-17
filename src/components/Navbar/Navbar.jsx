@@ -4,7 +4,7 @@ import './Navbar.css';
 
 export default function Navbar() {
     return (
-        <div className='navbar__container mg__inline'>
+        <nav className='navbar__container mg__inline'>
             <div className="brand__container">
                 <div className="brand__logo"></div>
                 <h2 className="brand__name">
@@ -28,11 +28,11 @@ export default function Navbar() {
                     <li><a href="#" className="categories">Útiles escolares</a></li>
                     <li><a href="#" className="categories">Cuadernos</a></li>
                     <li className="shopping__cart">
-                        <ShoppingCart size="32" color="#2ccce4" className='cart__icon'/>
+                        <ShoppingCart size="32" className='cart__icon'/>
                         <div className="hardcoded__number"><div className="bg__color">4</div></div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
     )
 }

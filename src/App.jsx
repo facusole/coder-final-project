@@ -7,8 +7,12 @@ function App() {
 
   return (
     <div >
+      <header>
         <Navbar />
+      </header>
+      <main>
         <ItemListContainer greeting={'Tutor'}/>
+      </main>
     </div>
   )
 }

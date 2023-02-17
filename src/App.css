@@ -18,7 +18,8 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: var(--ff-primary)
+  font-family: var(--ff-primary);
+  color: var(--black);
 }
 
 img, picture, video, canvas, svg {
@@ -42,6 +43,11 @@ li {
   list-style: none;
 }
 
+::selection {
+  color: var(--white);
+  background: var(--darkerblue);
+}
+
 /* --------------- Variables --------------- */
 
 :root {
@@ -56,10 +62,20 @@ li {
   --fw-light: 300;
   --fw-regular: 400;
   --fw-bold: 700;
+
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(0, 0%, 97%);
+  --black: hsl(0, 0%, 6%);
+  --lightblue: hsl(182, 39%, 85%);
+  --darkerblue: hsl(185, 71%, 33%);
 }
 
 /* --------------- Utility classes --------------- */
 
 .mg__inline {
   padding-inline: 7rem;
+}
+
+body {
+  background: var(--lightgray);
 }

@@ -1,4 +1,4 @@
-import { ShoppingCart } from 'iconsax-react';
+import CartWidget from './CartWidget/CartWidget';
 import BrandLogo from '../../assets/pluma-logo.webp'
 
 import './Navbar.css';
@@ -29,7 +29,7 @@ export default function Navbar() {
                     <li><a href="#" className="categories">Útiles escolares</a></li>
                     <li><a href="#" className="categories">Cuadernos</a></li>
                     <li className="shopping__cart">
-                        <ShoppingCart size="48" className='cart__icon'/>
+                        <CartWidget />
                         <div className="hardcoded__number"><div className="bg__color">4</div></div>
                     </li>
                 </ul>

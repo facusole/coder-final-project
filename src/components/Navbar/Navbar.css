@@ -8,18 +8,20 @@
 
 .brand__container {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
-.brand__logo {
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid black;
-    cursor: pointer;
-}
+/* .brand__logo {
+    aspect-ratio: 3/1;
+    width: 10rem;
+} */
 
 .brand__name {
     color: var(--darkerblue);
+    font-family: var(--ff-logo);
+    text-transform: uppercase;
+    font-size: var(--fs-32);
 }
 
 .visually-hidden {
@@ -45,6 +47,7 @@
 
 .menu__container {
     display: flex;
+    align-items: center;
     gap: 2rem;
 
     font-size: var(--fs-16);
@@ -87,3 +90,6 @@
     border-radius: 50%;
     padding: .6125rem;   
 }
+
+/* --------------- Media queries --------------- */
+

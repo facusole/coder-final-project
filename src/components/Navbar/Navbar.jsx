@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <nav className='navbar__container mg__inline'>
             <div className="brand__container">
-                <a href="#"><img src={BrandLogo} className='brand__logo' alt="Logo de la marca Pluma de papel" /></a>
+                <a href="#"><img src={BrandLogo} aria-label='Pluma de Papel' className='brand__logo' alt="Logo de la marca Pluma de papel" /></a>
                 {/* <h2 className="brand__name">
                     Pluma de Papel
                 </h2> */}

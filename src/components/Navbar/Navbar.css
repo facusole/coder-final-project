@@ -66,6 +66,7 @@
 
 .cart__icon {
     color: var(--darkerblue);
+    position: absolute;
 }
 
 .hardcoded__number {

@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,  
+        "name": "T.E.G",
+        "price": 6500,
+        "img": "https://via.placeholder.com/220",
+        "category": "juegos-de-mesa"
+    },
+    {
+        "id": 2,
+        "name": "Hues & Cues",
+        "price": 7500,
+        "img": "https://via.placeholder.com/220",
+        "category": "juegos-de-mesa"
+    },
+    {
+        "id": 3,
+        "name": "Dia de playa",
+        "price": 8500,
+        "img": "https://via.placeholder.com/220",
+        "category": "juegos-de-mesa"
+    },
+    {
+        "id": 4,
+        "name": "Lapicera bic",
+        "price": 9500,
+        "img": "https://via.placeholder.com/220",
+        "category": "utiles-escolares"
+    },
+    {
+        "id": 5,
+        "name": "Caja de lapices Faber Castell x12",
+        "price": 10500,
+        "img": "https://via.placeholder.com/220",
+        "category": "utiles-escolares"
+    },
+    {
+        "id": 6,
+        "name": "Cartuchera",
+        "price": 10500,
+        "img": "https://via.placeholder.com/220",
+        "category": "utiles-escolares"
+    },
+    {
+        "id": 7,
+        "name": "Cuaderno oficio",
+        "price": 10500,
+        "img": "https://via.placeholder.com/220",
+        "category": "cuadernos"
+    },
+    {
+        "id": 8,
+        "name": "Cuaderno oficio tapa dura",
+        "price": 10500,
+        "img": "https://via.placeholder.com/220",
+        "category": "cuadernos"
+    },
+    {
+        "id": 9,
+        "name": "Cuaderno tapa dura a3",
+        "price": 10500,
+        "img": "https://via.placeholder.com/220",
+        "category": "cuadernos"
+    }
+]

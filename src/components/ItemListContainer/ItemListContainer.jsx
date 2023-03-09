@@ -45,7 +45,7 @@ export default function ItemListContainer() {
             {isLoading == true ?
                 <h2>Cargando...</h2>
                 :
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 64, marginTop: 32 }}>
+                <div className='itemList__container'>
                     {productos.map((item) =>
                         <Item key={item.id} item={item}/>
                     )}

@@ -70,6 +70,7 @@ li {
   --black: hsl(0, 0%, 6%);
   --lightblue: hsl(185, 50%, 95%);
   --darkerblue: hsl(185, 71%, 33%);
+  --darkerblue-hover: hsl(185, 71%, 28%);
 }
 
 /* --------------- Utility classes --------------- */

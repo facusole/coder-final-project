@@ -66,14 +66,16 @@
 
 .cart__icon {
     color: var(--darkerblue);
+    position: relative;
+
 }
 
-.hardcoded__number {
+.cart__size {
     position: absolute;
-    bottom: 0;
+    color: var(--darkerblue);
     right: 0;
-    transform: translate(.6rem, .5rem);
-   
+    bottom: 0;
+    transform: translate(10px, 10px);
 }
 
 .bg__color {

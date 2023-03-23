@@ -30,8 +30,7 @@ export default function Navbar() {
                     <li><Link to="/category/utiles-escolares" className="categories">Útiles escolares</Link></li>
                     <li><Link to="/category/cuadernos" className="categories">Cuadernos</Link></li>
                     <li className="shopping__cart">
-                        <CartWidget />
-                        <div className="hardcoded__number"><div className="bg__color">4</div></div>
+                        <Link to='/cart'><CartWidget /></Link>
                     </li>
                 </ul>
             </div>

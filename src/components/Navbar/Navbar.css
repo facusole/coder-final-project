@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 2rem;
-    border-bottom: 2px solid var(--darkerblue);
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--gray);
 }
 
 .brand__container {
@@ -14,14 +14,7 @@
 
 .brand__logo {
     aspect-ratio: 3/1;
-    width: 7rem;
-}
-
-.brand__name {
-    color: var(--darkerblue);
-    font-family: var(--ff-logo);
-    text-transform: uppercase;
-    font-size: var(--fs-32);
+    width: 4rem;
 }
 
 .visually-hidden {
@@ -33,11 +26,11 @@
 }
 
 .searchbar__input {
-    padding: .5rem;
-    border-radius: .25rem;
-    border: 1px solid var(--lightblue) ;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--lightgray) ;
     cursor: pointer;
-    width: 400px;
+    width: 11rem;
 }
 
 .searchbar__input:focus {
@@ -57,6 +50,7 @@
 .categories {
     text-decoration: none;
     color: black;
+    display: none;
 }
 
 .shopping__cart {
@@ -67,15 +61,16 @@
 .cart__icon {
     color: var(--darkerblue);
     position: relative;
-
+    display: block;
+    width: 2rem;
+    height: 2rem;
 }
 
 .cart__size {
     position: absolute;
     color: var(--darkerblue);
     right: 0;
-    bottom: 0;
-    transform: translate(10px, 10px);
+    transform: translate(-5px, -10px);
 }
 
 .bg__color {

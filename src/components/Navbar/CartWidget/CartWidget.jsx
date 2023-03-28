@@ -10,9 +10,8 @@ export default function CartWidget() {
 
     return (
         <div>
-            <ShoppingCart size="32" className='cart__icon'/>
-            <span className='cart__size'>{cart.length}</span>
-            
+            <ShoppingCart size="44" className='cart__icon'/>
+            <span className='cart__size'>{cart.length}</span> 
         </div>
 
     )

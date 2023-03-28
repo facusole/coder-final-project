@@ -1,7 +1,6 @@
 /* --------------- Font import --------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /* --------------- CSS Reset --------------- */
 *, *::before, *::after {
@@ -52,8 +51,7 @@ li {
 /* --------------- Variables --------------- */
 
 :root {
-  --ff-primary: 'Roboto', sans-serif;
-  --ff-logo: 'Playfair Display', serif;
+  --ff-primary: 'Poppins', sans-serif;
 
   --fs-16: 1rem;
   --fs-20: 1.5rem;
@@ -66,15 +64,16 @@ li {
   --fw-bold: 700;
 
   --white: hsl(0, 0%, 100%);
-  --lightgray: hsl(0, 0%, 97%);
+  --lightgray: hsl(0, 0%, 91%);
+  --gray: hsl(228, 4%, 54%);
   --black: hsl(0, 0%, 6%);
-  --lightblue: hsl(185, 50%, 95%);
-  --darkerblue: hsl(185, 71%, 33%);
-  --darkerblue-hover: hsl(185, 71%, 28%);
+  --lightblue: hsl(183, 50%, 95%);
+  --darkerblue: hsl(183, 57%, 40%);
+  --darkerblue-hover: hsl(183, 71%, 28%);
 }
 
 /* --------------- Utility classes --------------- */
 
 .mg__inline {
-  padding-inline: 7rem;
+  padding-inline: .75rem;
 }

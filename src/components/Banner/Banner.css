@@ -1,0 +1,9 @@
+.banner__info {
+    text-align: center;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    color: var(--gray);
+
+    background: var(--lightgray);
+    padding: 1rem;
+}

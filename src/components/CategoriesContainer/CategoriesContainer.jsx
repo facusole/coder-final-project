@@ -8,7 +8,7 @@ import './CategoriesContainer.css'
 export default function CategoriesContainer() {
     return (
         <section className="categories__section mg__inline">
-            <h2 className="subheading categories__section__heading">Categorias</h2>
+            <h3 className="subheading section__heading">Categorias</h3>
             <article className='categories__container'>
                 <Link className='link categories__link' to={"/category/utiles-escolares"}>
                     <img className='categories__img' src={utilesEscolares} alt="Una manzana encima de unos libros encima de una mesa" />

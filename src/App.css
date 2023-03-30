@@ -54,14 +54,15 @@ li {
   --ff-primary: 'Poppins', sans-serif;
 
   --fs-16: 1rem;
-  --fs-20: 1.5rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
   --fs-32: 2rem;
   --fs-48: 3rem;
   --fs-64: 4rem;
 
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-bold: 700;
+  --fw-light: 400;
+  --fw-regular: 500;
+  --fw-bold: 600;
 
   --white: hsl(0, 0%, 100%);
   --lightgray: hsl(0, 0%, 91%);
@@ -84,11 +85,17 @@ li {
 }
 
 .heading {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: var(--fs-32);
+  font-weight: var(--fw-bold);
 }
 
 .subheading {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: var(--fs-20);
+  font-weight: var(--fw-light);
+}
+
+.section__heading {
+  display: inline;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--darkerblue);
 }

@@ -17,7 +17,8 @@ export default function Welcome() {
                 <source srcSet={kitEscolarDesktop}
                         media='(min-width: 1024px)'
                 />
-                <img src={kitEscolar} alt="Un juego de letras de madera y plastilinas encima de una mesa dentor de una sala de juegos infantiles" /></picture>
+                <img src={kitEscolar} alt="Un juego de letras de madera y plastilinas encima de una mesa dentor de una sala de juegos infantiles" />
+            </picture>
             <Link to={`/category/utiles-escolares`} className='link welcome__btn'><CTAbutton description={'Ver kits disponibles'} /></Link>
         </section>
     )

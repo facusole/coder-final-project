@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
@@ -37,15 +38,15 @@ function App() {
         <Navbar />
         <Banner />
       </header>
-      {/* <main>
+      <main>
         <Routes>
-          <Route path="/" element={<ItemListContainer />}/>
-          <Route path="/category/:categoryId" element={<ItemListContainer />}/>
+          <Route path="/" element={<Home />}/>
+          {/* <Route path="/category/:categoryId" element={<ItemListContainer />}/>
           <Route path="/item/:itemId" element={<ItemDetailContainer/>} />
           <Route path="/cart" element={<Cart/>} />
-          <Route path="*" element={<Navigate to='/' />}/>
+          <Route path="*" element={<Navigate to='/' />}/> */}
         </Routes>
-      </main> */}
+      </main>
 
     </CartContext.Provider>
   )

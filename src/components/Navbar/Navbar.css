@@ -70,7 +70,7 @@
     position: absolute;
     color: var(--darkerblue);
     right: 0;
-    transform: translate(-5px, -10px);
+    transform: translate(-10px, -10px);
 }
 
 .bg__color {

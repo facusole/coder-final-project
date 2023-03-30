@@ -1,0 +1,18 @@
+.welcome__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+    padding-block: 2rem 3rem ;
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.welcome__paragraph {
+    max-width: 30ch;
+}
+
+.welcome__btn {
+    margin-block: 1rem;
+}

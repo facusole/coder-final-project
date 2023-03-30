@@ -1,0 +1,20 @@
+.cta__button {
+    display: flex;
+    gap: .5rem;
+    
+    font-size: var(--fs-16);
+    font-weight: 400;
+    color: var(--white);
+
+    background-color: var(--darkerblue);
+    border: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.cta__button:hover {
+    background-color: var(--darkerblue-hover);
+}

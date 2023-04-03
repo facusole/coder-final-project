@@ -29,10 +29,10 @@
 
     font-size: var(--fs-16);
     font-weight: var(--fw-light);
-    color: var(--darkerblue);
+    color: var(--green);
     text-decoration: none;
 
-    background-color: var(--lightblue);
+    background-color: var(--lightgreen);
     border-radius: .75rem;
     padding: .5rem 1rem;
 }

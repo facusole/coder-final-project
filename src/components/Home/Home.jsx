@@ -1,6 +1,7 @@
 import ItemListContainer from "../ItemListContainer/ItemListContainer"
 import Welcome from "../Welcome/Welcome"
 import CategoriesContainer from "../CategoriesContainer/CategoriesContainer"
+import InfoCard from "../InfoCard/InfoCard"
 import { ArrowRight } from "iconsax-react"
 import { Link } from "react-router-dom"
 
@@ -14,7 +15,9 @@ export default function Home() {
                 <ItemListContainer />
                 <Link className="items__container__label" to={'/all-products'}>Ver todos los productos <ArrowRight size={20}/></Link>
             </section>
-            <div style={{height: '100px', backgroundColor: 'red', margin: '50px'}}>Hola</div>
+           <section>
+                <InfoCard/>
+           </section>
         </>
     )
 }

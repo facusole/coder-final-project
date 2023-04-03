@@ -6,6 +6,7 @@ import Banner from "./components/Banner/Banner";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
+import Footer from "./components/Footer/Footer";
 import { CartContext } from "./components/context/CartContext";
 
 import './App.css';
@@ -36,7 +37,7 @@ function App() {
 
       <header>
         <Navbar />
-        <Banner />
+        <Banner desc={'Envío gratis en compras a partir de $6.000'} />
       </header>
       <main>
         <Routes>
@@ -48,6 +49,11 @@ function App() {
           <Route path="*" element={<Navigate to='/' />} /> */}
         </Routes>
       </main>
+
+      <footer>
+        <Banner desc={'¿Necesitas ayuda? Escríbenos mediante Whatsapp'}/>
+        <Footer />
+      </footer>
 
     </CartContext.Provider>
   )

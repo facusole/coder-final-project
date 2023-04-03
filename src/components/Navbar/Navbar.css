@@ -35,7 +35,7 @@
 
 .searchbar__input:focus {
     outline: transparent;
-    border: 2px solid var(--darkerblue);
+    border: 2px solid var(--green);
 }
 
 .menu__container {
@@ -59,7 +59,7 @@
 }
 
 .cart__icon {
-    color: var(--darkerblue);
+    color: var(--green);
     position: relative;
     display: block;
     width: 2rem;
@@ -68,7 +68,7 @@
 
 .cart__size {
     position: absolute;
-    color: var(--darkerblue);
+    color: var(--green);
     right: 0;
     transform: translate(-10px, -10px);
 }

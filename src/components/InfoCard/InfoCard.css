@@ -1,0 +1,31 @@
+.info__card {
+    background-color: var(--green);
+    margin: 10rem 1rem;
+    padding: 2.5rem 1rem;
+
+    color: var(--white);
+}
+
+.info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info__item > h3 {
+    font-size: var(--fs-24);
+    font-weight: var(--fw-bold);
+}
+
+.info__item > p {
+    font-size: var(--fs-16);
+    font-weight: var(--fw-light);
+    width: 18ch;
+}

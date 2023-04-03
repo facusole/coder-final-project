@@ -6,7 +6,7 @@
     font-weight: 400;
     color: var(--white);
 
-    background-color: var(--darkerblue);
+    background-color: var(--green);
     border: transparent;
     border-radius: 1rem;
     padding: 1rem;
@@ -16,5 +16,5 @@
 }
 
 .cta__button:hover {
-    background-color: var(--darkerblue-hover);
+    background-color: var(--green-hover);
 }

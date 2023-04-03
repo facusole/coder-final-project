@@ -42,3 +42,8 @@
     display: flex;
     gap: 1.5rem;
 }
+
+.footer__social__media > li > a {
+    text-decoration: none;
+    color: var(--white);
+}

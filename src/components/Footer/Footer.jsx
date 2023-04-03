@@ -18,8 +18,8 @@ export default function Footer() {
             </ul>
 
             <ul className='footer__social__media'>
-                <li><a href="https://www.instagram.com/pluma_de_papel/" target="_blank" rel="noopener noreferrer"></a><Instagram size={40}/></li>
-                <li><a href="https://wa.link/4bp7v9" target="_blank" rel="noopener noreferrer"></a><Whatsapp size={40}/></li>
+                <li><a href="https://www.instagram.com/pluma_de_papel/" target="_blank" rel="noopener noreferrer"><Instagram size={40}/></a></li>
+                <li><a href="https://wa.link/4bp7v9" target="_blank" rel="noopener noreferrer"><Whatsapp size={40}/></a></li>
             </ul>
         </div>
     )

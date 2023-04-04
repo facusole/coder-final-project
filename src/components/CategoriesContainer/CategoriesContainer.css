@@ -2,6 +2,18 @@
     margin-block: 3rem 6rem;
 }
 
+@media (min-width: 768px) {
+    .categories__section {
+        margin-block: 5rem 8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .categories__section {
+        margin-block: 6rem 10rem;
+    }
+}
+
 .section__heading {
     display: inline;
     padding-block: 1rem;
@@ -17,6 +29,18 @@
     overflow: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: 0;
+}
+
+@media (min-width: 768px) {
+    .categories__container {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .categories__container {
+        gap: 10rem;
+}
 }
 
 .categories__container > h3{

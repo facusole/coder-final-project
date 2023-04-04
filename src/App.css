@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /* --------------- CSS Reset --------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -11,7 +13,8 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -22,20 +25,34 @@ body {
   color: var(--black);
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -80,6 +97,12 @@ li {
   padding-inline: 1rem;
 }
 
+@media (min-width: 768px) {
+  .mg__inline {
+    padding-inline: 3rem;
+  }
+}
+
 .link {
   text-decoration: none;
   color: black;
@@ -100,3 +123,9 @@ li {
   padding-block: 1rem;
   border-bottom: 1px solid var(--green);
 }
+
+.center {
+  display: grid;
+  place-content: center;
+}
+

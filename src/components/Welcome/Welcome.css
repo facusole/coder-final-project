@@ -40,3 +40,52 @@
         right: 5.5rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .welcome__section {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5rem;
+
+        text-align: left;
+        padding-block: 5rem 3rem ;
+
+    }
+    
+    .welcome__btn {
+        position: absolute;
+        bottom: 4rem;
+        right: 10rem;
+    }
+}
+
+/* MALA PRACTICA PERDON NO SABIA COMO SOLUCIONARLO */
+
+@media (min-width: 1140px) {
+
+    .welcome__btn {
+        right: 13rem;
+    }
+}
+
+@media (min-width: 1300px) {
+        
+    .welcome__btn {
+        right: 18rem;
+    }
+}
+
+@media (min-width: 1350px) {
+        
+    .welcome__btn {
+        right: 20rem;
+    }
+}
+
+@media (min-width: 1430px) {
+        
+    .welcome__btn {
+        right: 22rem;
+    }
+}
+

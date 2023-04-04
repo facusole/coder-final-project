@@ -8,11 +8,13 @@ import './Welcome.css'
 export default function Welcome() {
     return (
         <section className='welcome__section mg__inline'>
-            <h2 className='subheading'>Kit de útiles escolares</h2>
-            <div>
-                <h1 className='heading'>Vuelta al cole!</h1>
-                <p className='welcome__paragraph'>Podes ver nuestros kits disponibles o pedir el tuyo personalizado por nuestras redes.</p>
-            </div>
+            <article className='welcome__header'>
+                <h2 className='subheading'>Kit de útiles escolares</h2>
+                <div>
+                    <h1 className='heading'>Vuelta al cole!</h1>
+                    <p className='welcome__paragraph'>Podes ver nuestros kits disponibles o pedir el tuyo personalizado por nuestras redes.</p>
+                </div>
+            </article>
             <picture>
                 <source srcSet={kitEscolarDesktop}
                         media='(min-width: 1024px)'

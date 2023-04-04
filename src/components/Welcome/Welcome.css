@@ -7,6 +7,7 @@
     text-align: center;
     padding-block: 2rem 3rem ;
     border-bottom: 1px solid var(--lightgray);
+    position: relative;
 }
 
 .welcome__paragraph {
@@ -15,4 +16,27 @@
 
 .welcome__btn {
     margin-block: 1rem;
+}
+
+@media (min-width: 768px) {
+    .welcome__section {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5rem;
+
+        text-align: left;
+        padding-block: 5rem 3rem ;
+
+    }
+    
+    .welcome__paragraph {
+        max-width: 29ch;
+    }
+    
+    .welcome__btn {
+        position: absolute;
+        bottom: 2rem;
+        right: 5.5rem;
+    }
 }

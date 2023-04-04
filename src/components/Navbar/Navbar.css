@@ -30,7 +30,7 @@
     border-radius: 1rem;
     border: 1px solid var(--lightgray) ;
     cursor: pointer;
-    width: 11rem;
+    width: 13rem;
 }
 
 .searchbar__input:focus {

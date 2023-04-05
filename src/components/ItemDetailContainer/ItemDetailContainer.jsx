@@ -39,7 +39,7 @@ export default function ItemDetailContainer() {
     return (
         <div className="contenedor">
             {
-                isLoading ? <h1 style={{width: '100vw', marginInline: 'auto', padding: '30dvh 90dvh'}}>Loading...</h1>
+                isLoading ? <h2>Loading...</h2>
                 :
                 <ItemDetail item={item}/>
             }

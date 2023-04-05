@@ -11,8 +11,8 @@ import './ItemListContainer.css'
 
 export default function ItemListContainer() {
 
-    let [productos, setProductos] = useState([])
-    let [isLoading, setIsLoading] = useState(true)
+    const [productos, setProductos] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
 
     const { categoryId } = useParams()
 

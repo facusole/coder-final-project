@@ -129,8 +129,34 @@
 
 .add__cart {
     margin: 2rem auto 6rem auto;
+    width: 15rem;
     text-align: center;
 }
+
+.add__cart__span {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-inline: auto;
+}
+
+.goTo__cart {
+    font-weight: var(--fw-regular);
+    color: var(--white);
+    background-color: var(--green);
+    text-decoration: none;
+    width: 15rem;
+
+    border-radius: 1rem;
+    margin: 2rem auto 6rem auto;
+    padding: 1rem;
+    transition: .3s ease-in;
+}
+
+.goTo__cart:hover {
+    background-color: var(--green-hover);
+}
+
 
 @media (min-width: 768px) {
     .item__counter {

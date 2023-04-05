@@ -41,7 +41,7 @@ export default function ItemDetail({ item }) {
             {isLoading ? <h2>Loading...</h2>
                 :
                 <div className="item__detail_container mg__inline">
-                    <span><button className="go__back__btn" onClick={handleBack}><ArrowLeft size={24}/></button></span>
+                    <span><button className="go__back__btn" onClick={handleBack}><ArrowLeft size={24} /></button></span>
                     <div className="item__detail__info">
                         <img className="item__detail__img" src={item.img} alt={item.name} />
                         <div className="item__detail">
@@ -50,8 +50,12 @@ export default function ItemDetail({ item }) {
                             <p className="item__detail__description">{item.description}</p>
                             {
                                 isInCart(item.id)
-                                    ? <Link to='/cart'>Finalizar compra</Link>
-                                    : <ItemCount quantity={quantity} setQuantity={setQuantity} handleAddToCart={handleAddToCart} />
+                                    ? <Link className="goTo__cart" to='/cart'>Finalizar compra</Link>
+                                    : <ItemCount
+                                        quantity={quantity}
+                                        setQuantity={setQuantity}
+                                        handleAddToCart={handleAddToCart}
+                                    />
                             }
 
                         </div>

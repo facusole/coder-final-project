@@ -1,5 +1,4 @@
-import CTAbutton from "../CTAbutton/CTAbutton"
-
+import { ArrowRight } from "iconsax-react"
 
 export default function ItemCount({quantity, setQuantity, handleAddToCart}) {
 
@@ -20,7 +19,7 @@ export default function ItemCount({quantity, setQuantity, handleAddToCart}) {
                 <span>{quantity}</span>
                 <button className="item__counter__handler" onClick={handleAdd}>+</button>
             </span>
-            <CTAbutton className='add__cart' description={'Agregar al carrito'} />
+            <button onClick={handleAddToCart} className='cta__button add__cart'><span className="add__cart__span">Agregar al carrito <ArrowRight size={24} color={'#fff'}/></span></button>
         </div>
     )
 }

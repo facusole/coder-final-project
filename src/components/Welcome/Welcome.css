@@ -89,3 +89,10 @@
     }
 }
 
+@media (min-width: 1460px) {
+        
+    .welcome__btn {
+        right: 36rem;
+    }
+}
+

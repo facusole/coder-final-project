@@ -33,6 +33,18 @@
     width: 13rem;
 }
 
+@media (min-width: 768px) {
+    .searchbar__input {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .searchbar__input {
+        width: 35rem;
+    }
+}
+
 .searchbar__input:focus {
     outline: transparent;
     border: 2px solid var(--green);
@@ -71,6 +83,18 @@
     color: var(--green);
     right: 0;
     transform: translate(-10px, -10px);
+}
+
+@media (min-width: 768px) {
+    .cart__size {
+        transform: translate(-40px, -10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .cart__size {
+        transform: translate(-90px, -10px);
+    }
 }
 
 .bg__color {

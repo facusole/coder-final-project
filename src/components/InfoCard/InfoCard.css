@@ -11,6 +11,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 0;
+    scrollbar-width: 0;
 }
 
 .info__item {
@@ -28,6 +29,10 @@
     font-size: var(--fs-16);
     font-weight: var(--fw-light);
     width: 18ch;
+}
+
+.info__list::-webkit-scrollbar {
+    display: none;
 }
 
 @media (min-width: 768px) {

@@ -5,6 +5,18 @@
     color: var(--white);
 }
 
+@media (min-width: 768px) {
+    .footer__container {
+        display: grid;
+        grid-template-columns: minmax(15rem, 1fr) 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        gap: 5rem;
+    }
+    
+}
+
 .footer__address {
     display: flex;
     flex-direction: column;
@@ -31,6 +43,13 @@
 
     font-weight: var(--fw-light);
 }
+
+@media (min-width: 1024px) {
+    .footer__links {
+        flex-direction: row;
+    }
+}
+
 
 .footer__link {
     color: var(--white);

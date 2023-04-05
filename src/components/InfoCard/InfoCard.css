@@ -47,8 +47,20 @@
         display: grid;
         grid-template-columns: repeat(3, min(22rem));
         overflow: scroll;
-        flex-direction: row;
         gap: 2rem;
         padding: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .info__card {
+        margin: 10rem 6rem;
+    }
+
+    .info__list {
+        display: grid;
+        grid-template-columns: repeat(3, min(22rem));
+        place-content: center;
+        gap: 4rem;
     }
 }

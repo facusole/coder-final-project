@@ -103,6 +103,12 @@ li {
   }
 }
 
+@media (min-width: 1024px) {
+  .mg__inline {
+    padding-inline: 6rem;
+  }
+}
+
 .link {
   text-decoration: none;
   color: black;

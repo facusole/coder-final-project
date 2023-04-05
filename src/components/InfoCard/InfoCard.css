@@ -29,3 +29,21 @@
     font-weight: var(--fw-light);
     width: 18ch;
 }
+
+@media (min-width: 768px) {
+    .info__card {
+        margin: 10rem 1rem;
+        padding: 3.5rem 4rem;
+    
+        color: var(--white);
+    }
+
+    .info__list {
+        display: grid;
+        grid-template-columns: repeat(3, min(22rem));
+        overflow: scroll;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0;
+    }
+}

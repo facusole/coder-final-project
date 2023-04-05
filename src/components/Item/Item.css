@@ -21,7 +21,7 @@
 .item__price {
     font-size: var(--fs-24);
     font-weight: var(--fw-regular);
-    color: var(--darkerblue);
+    color: var(--green);
 }
 
 .item__detail__btn {
@@ -32,14 +32,14 @@
 .item__detail__link {
     text-decoration: none;
     color: var(--white);
-    background-color: var(--darkerblue);
+    background-color: var(--green);
     padding: .5rem 1rem;
     border-radius: 8px;
     transition: .3s ease;
 }
 
 .item__detail__link:is(:hover, :focus-visible) {
-    background-color: var(--darkerblue-hover);
+    background-color: var(--green-hover);
     scale: 1.02;
 }
 

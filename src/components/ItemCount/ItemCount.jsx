@@ -1,3 +1,4 @@
+import CTAbutton from "../CTAbutton/CTAbutton"
 
 
 export default function ItemCount({quantity, setQuantity, handleAddToCart}) {
@@ -13,13 +14,13 @@ export default function ItemCount({quantity, setQuantity, handleAddToCart}) {
 
     return (
         
-        <div>
+        <div className="item__counter__container">
             <span className="item__counter">
                 <button className="item__counter__handler" onClick={handleSubstract}>-</button>
                 <span>{quantity}</span>
                 <button className="item__counter__handler" onClick={handleAdd}>+</button>
             </span>
-            <button className="cta__button add__cart" onClick={handleAddToCart}>Agregar al carrito</button>
+            <CTAbutton className='add__cart' description={'Agregar al carrito'} />
         </div>
     )
 }

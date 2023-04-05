@@ -14,14 +14,12 @@ export default function ItemCount({quantity, setQuantity, handleAddToCart}) {
     return (
         
         <div>
-            <button onClick={handleSubstract}>-</button>
-
-            <span>{quantity}</span>
-
-            <button onClick={handleAdd}>+</button>
-
-            <br />
-            <button onClick={handleAddToCart}>Agregar al carrito</button>
+            <span className="item__counter">
+                <button className="item__counter__handler" onClick={handleSubstract}>-</button>
+                <span>{quantity}</span>
+                <button className="item__counter__handler" onClick={handleAdd}>+</button>
+            </span>
+            <button className="cta__button add__cart" onClick={handleAddToCart}>Agregar al carrito</button>
         </div>
     )
 }

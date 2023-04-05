@@ -1,5 +1,6 @@
 import { useContext, useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
+import { ArrowLeft } from "iconsax-react"
 import { CartContext } from "../context/CartContext"
 import ItemCount from "../ItemCount/ItemCount"
 
@@ -37,26 +38,26 @@ export default function ItemDetail({ item }) {
     return (
         <div>
 
-            { isLoading ? <h1>Loading...</h1>
+            {isLoading ? <h1>Loading...</h1>
                 :
-            <div className="item__detail_container">
-                <div className="item__detail__info">
-                    {/* <img className="item__detail__img" src={item.img} alt={item.name} /> */}
-                    <div className="item__detail">
-                        <h2 className="item__detail_name">{item.name}</h2>
-                        <p className="item__detail__description">{item.description}</p>
-                        <p className="item__detail__price">${item.price}</p>
-                        {
-                            isInCart(item.id)
-                            ? <Link to='/cart'>Finalizar compra</Link>
-                            : <ItemCount quantity={quantity} setQuantity={setQuantity} handleAddToCart={handleAddToCart}/>
-                        } 
-                        <button className="item__detail__link" onClick={handleBack}>Volver</button>
+                <div className="item__detail_container mg__inline">
+                    <span><button className="go__back__btn" onClick={handleBack}><ArrowLeft size={24}/></button></span>
+                    <div className="item__detail__info">
+                        <img className="item__detail__img" src={item.img} alt={item.name} />
+                        <div className="item__detail">
+                            <h2 className="item__detail_name">{item.name}</h2>
+                            <p className="item__detail__price">${item.price}</p>
+                            <p className="item__detail__description">{item.description}</p>
+                            {
+                                isInCart(item.id)
+                                    ? <Link to='/cart'>Finalizar compra</Link>
+                                    : <ItemCount quantity={quantity} setQuantity={setQuantity} handleAddToCart={handleAddToCart} />
+                            }
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            
+
             }
 
             {/* HACER SECCION PRODUCTOS RELACIONADOS */}

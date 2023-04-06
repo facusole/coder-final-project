@@ -8,10 +8,9 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Cart from "./components/Cart/Cart";
 import Checkout from './components/Checkout/Checkout'
 import Footer from "./components/Footer/Footer";
-import CartProvider, { CartContext } from "./components/context/CartContext";
+import CartProvider from "./components/context/CartContext";
 
 import './App.css';
-import { Check } from "iconsax-react";
 
 function App() {
 
@@ -26,7 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/all-products" element={<ItemListContainer/>} />
-          {/* <Route path="/category/:categoryId" element={<ItemListContainer />} />*/}
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/item/:itemId" element={<ItemDetailContainer/>} />
           <Route path="/cart" element={<Cart/>} /> 
           <Route path="/checkout" element={<Checkout />} />

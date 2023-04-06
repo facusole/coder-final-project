@@ -15,24 +15,17 @@ export default function ItemDetailContainer() {
     useEffect(() => {
         setIsLoading(true)
 
-        // //1- referencia (sync)
-        // const docRef = doc(db, 'productos', itemId)
+        //1- referencia (sync)
+        const docRef = doc(db, 'productos', itemId)
 
-        // //2- llamado (async)
-        // getDoc(docRef)
-        //     .then((doc) => {
-        //         setItem({
-        //             ...doc.data(),
-        //             id: doc.id
-        //         })
-        //     })
-        //     .finally(() => setIsLoading(false))
-
-        pedirProductosPorId(Number(itemId)) // El param viene como string, la data es un numero, necesita ser parseado
-            .then(res => {
-                setItem(res)
+        //2- llamado (async)
+        getDoc(docRef)
+            .then((doc) => {
+                setItem({
+                    ...doc.data(),
+                    id: doc.id
+                })
             })
-            .catch(error => console.log(error))
             .finally(() => setIsLoading(false))
     }, [])
 

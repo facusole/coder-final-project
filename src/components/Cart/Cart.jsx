@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 import { Trash } from 'iconsax-react'
 import CTAbutton from '../CTAbutton/CTAbutton'
@@ -36,7 +37,7 @@ export default function Cart() {
                     ? <h2>Tu carrito está vacío, ve a llenarlo!</h2>
                     : <div className='cart__footer'>
                         <h3 className='cart__total'>Total: <span className="cart__total__price">${totalPrice().toFixed(2)}</span></h3>
-                        <span className='cart__cta'><CTAbutton description={'Finalizar compra'} /></span>
+                        <Link to={'/checkout'} className='cart__cta'><CTAbutton description={'Finalizar compra'} /></Link>
                     </div>
             }
         </section>

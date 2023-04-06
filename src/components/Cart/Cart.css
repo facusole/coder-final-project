@@ -90,4 +90,5 @@
 
 .cart__cta {
     align-self: flex-end;
+    text-decoration: none;
 }

@@ -4,7 +4,7 @@ export default function ItemList({productos}) {
 
 
     return (
-        <div className='itemList__container'>
+        <div className='itemList__container mg__inline'>
                     {productos.map((item) =>
                         <Item key={item.id} item={item} />
                     )}

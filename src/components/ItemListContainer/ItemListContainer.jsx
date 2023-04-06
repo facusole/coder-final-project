@@ -20,44 +20,28 @@ export default function ItemListContainer() {
 
         setIsLoading(true)
 
-        //// 1- armar un referencia (sincronico)
-        // const productosRef = collection(db, 'productos')
+        // 1- armar un referencia (sincronico)
+        const productosRef = collection(db, 'productos')
         // filtrado de la base de datos
-        // const q =   categoryId 
-        //             ? query(productosRef, where('category', '==', categoryId))
-        //             : productosRef
+        const q =   categoryId 
+                    ? query(productosRef, where('category', '==', categoryId))
+                    : productosRef
 
-        //// 2- pedir la coleccion (referencia, asincronico)
+        // 2- pedir la coleccion (referencia, asincronico)
         
-        // getDocs(q)
-        //     .then(res => {
-        //         const docs = res.docs.map((doc) => {
+        getDocs(q)
+            .then(res => {
+                const docs = res.docs.map((doc) => {
 
-        //             return {
-        //                 ...doc.data(),
-        //                 id: doc.id
-        //             }
-        //         })
+                    return {
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                })
 
-        //         console.log(docs)
-
-        //         setProductos(docs)
-        //     })
-        //     .finally(setIsLoading(false))
-
-        pedirDatos()
-            .then((response) => {
-                !categoryId ? 
-                setProductos(response) 
-                :
-                setProductos(response.filter((prod) => prod.category === categoryId))
+                setProductos(docs)
             })
-            .catch((error) => {
-                console.error(error)
-            })
-            .finally(() => {
-                setIsLoading(false)
-            })
+            .finally(setIsLoading(false))
 
     }, [categoryId])
 

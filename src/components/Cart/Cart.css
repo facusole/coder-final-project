@@ -24,7 +24,7 @@
 
 .cart__item__container {
     display: grid;
-    grid-template-columns: minmax(6rem, 10rem) 1fr min(3.5rem);
+    grid-template-columns: min(6rem) 1fr min(3.5rem);
     align-items: center;
     gap: 2rem;
     margin-block: 1rem;
@@ -33,15 +33,21 @@
 @media (min-width: 1024px) {
     .cart__item__container {
         place-content: center;
+        
     }
 }
 
 .cart__item__container > img {
     width: 6rem;
     aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 @media (min-width: 768px) {
+    .cart__item__container {
+        grid-template-columns: min(10rem) 1fr min(3.5rem);      
+    }
+
     .cart__item__container > img {
         width: 10rem;
     }
@@ -91,4 +97,11 @@
 .cart__cta {
     align-self: flex-end;
     text-decoration: none;
+}
+
+.empty__cart__header {
+    font-size: var(--fs-32);
+    font-weight: var(--fw-light);
+    color: var(--blue);
+    margin-block: 10.5rem;
 }

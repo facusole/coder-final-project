@@ -50,7 +50,7 @@ export default function ItemDetail({ item }) {
                             <p className="item__detail__description">{item.description}</p>
                             {
                                 isInCart(item.id)
-                                    ? <Link className="goTo__cart" to='/cart'>Finalizar compra</Link>
+                                    ? <span className="goTo__cart"><Link className="goTo__cart__link" to='/cart'>Finalizar compra</Link></span>
                                     : <ItemCount
                                         quantity={quantity}
                                         setQuantity={setQuantity}

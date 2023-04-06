@@ -141,20 +141,25 @@
 }
 
 .goTo__cart {
-    font-weight: var(--fw-regular);
-    color: var(--white);
     background-color: var(--green);
-    text-decoration: none;
     width: 15rem;
 
     border-radius: 1rem;
     margin: 2rem auto 6rem auto;
     padding: 1rem;
     transition: .3s ease-in;
+    cursor: pointer;
 }
 
 .goTo__cart:hover {
     background-color: var(--green-hover);
+}
+
+.goTo__cart__link {
+    margin-inline: 2.2rem;
+    font-weight: var(--fw-regular);
+    color: var(--white);
+    text-decoration: none;
 }
 
 

@@ -89,6 +89,8 @@ li {
   --green: hsl(183, 57%, 40%);
   --green-hover: hsl(183, 71%, 28%);
   --blue: hsl(225, 34%, 19%);
+  --lightred: hsl(0, 60%, 97%);
+  --red: hsl(0, 63%, 53%);
 }
 
 /* --------------- Utility classes --------------- */

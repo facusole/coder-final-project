@@ -20,7 +20,7 @@
     }
 
     .item__detail_container {
-        place-content: start;
+        place-content: center;
     }
 }
 

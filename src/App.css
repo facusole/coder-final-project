@@ -82,7 +82,8 @@ li {
   --fw-bold: 600;
 
   --white: hsl(0, 0%, 100%);
-  --lightgray: hsl(0, 0%, 91%);
+  --lightgray: hsl(0, 0%, 98%);
+  --mediumgray: hsl(0, 0%, 96%);
   --gray: hsl(228, 4%, 54%);
   --black: hsl(0, 0%, 6%);
   --lightgreen: hsl(183, 50%, 95%);

@@ -1,0 +1,128 @@
+.checkout__form__section {
+    margin-block: 3rem;
+}
+
+.checkout__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 2rem;
+}
+
+.form__input {
+    border: 1px solid var(--mediumgray);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.form__input:focus-within {
+    outline: 1px solid var(--green);
+}
+
+.span__btn {
+   display: flex;
+   flex-direction: row-reverse;
+   margin-block: 2rem 5rem;
+}
+
+.form__submit__btn {
+    color: var(--white);
+    background-color: var(--green);
+    border: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+   cursor: pointer;
+
+    display: flex;
+    gap: .5rem;
+    transition: .3s ease-in;
+}
+
+.form__submit__btn:is(:hover, :focus-within) {
+    background-color: var(--green-hover);
+}
+
+.checkout__summary {
+    background-color: var(--lightgray);
+    padding: 1rem;
+}
+
+.checkout__summary__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__summary__header > h2 {
+    color: var(--blue);
+}
+
+.checkout__summary__header > h2,
+.checkout__summary__header > p {
+    padding-bottom: 1rem;
+}
+
+
+.checkout__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+    border-block: 1px solid var(--mediumgray);
+}
+
+.checkout__item > h3 {
+    font-weight: var(--fw-light);
+}
+
+.checkout__item > p {
+    color: var(--green);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-20);
+
+}
+
+.checkout__summary > h3 {
+   padding-block: 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.checkout__total {
+    color: var(--green);
+}
+
+.checkout__success__container {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin-block: 10rem;
+    gap: 2rem;
+}
+
+.checkout__success__container > p {
+    width: 35ch;
+}
+
+.checkout__success__img {
+    margin-inline: auto;
+}
+
+.checkout__success__cta {
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .3s ease-in;
+}
+
+.checkout__success__cta:is(:hover, :focus-within) {
+    background-color: var(--green-hover);
+}

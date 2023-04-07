@@ -4,7 +4,12 @@ import BrandLogo from '../../assets/pluma-logo.webp'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({ input, setInput }) {
+
+    const handleChange = (e) => {
+        setInput(e.target.value)
+    }
+
     return (
         <nav className='navbar__container mg__inline'>
             <div className="brand__container">
@@ -12,7 +17,9 @@ export default function Navbar() {
             </div>
             <div className="searchBar__container">
                 <label htmlFor="searchbar" className='visually-hidden'>Buscá tu producto deseado</label>
-                <input  type="search" 
+                <input  type="search"
+                        value={input}
+                        onChange={handleChange} 
                         autoComplete='off'
                         spellCheck='off'
                         placeholder='Buscar'

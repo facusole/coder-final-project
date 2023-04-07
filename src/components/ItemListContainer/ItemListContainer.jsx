@@ -9,7 +9,7 @@ import './ItemListContainer.css'
 
 
 
-export default function ItemListContainer() {
+export default function ItemListContainer({ filterCondition }) {
 
     const [productos, setProductos] = useState([])
     const [isLoading, setIsLoading] = useState(true)
@@ -54,7 +54,7 @@ export default function ItemListContainer() {
             {isLoading ?
                 <h2 className='loader'>Loading...</h2>
                 :
-                <ItemList productos={productos} />
+                <ItemList productos={productos} filterCondition={filterCondition} />
             }
 
         </>

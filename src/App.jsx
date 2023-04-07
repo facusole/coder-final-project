@@ -14,18 +14,20 @@ import './App.css';
 
 function App() {
 
+  const [input, setInput] = useState('')
+
   return (
     <CartProvider>
 
       <header>
-        <Navbar />
+        <Navbar input={input} setInput={setInput}/>
         <Banner desc={'Envío gratis en compras a partir de $6.000'} />
       </header>
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/all-products" element={<ItemListContainer/>} />
-          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/all-products" element={<ItemListContainer filterCondition={input}/>} />
+          <Route path="/category/:categoryId" element={<ItemListContainer filterCondition={input}/>} />
           <Route path="/item/:itemId" element={<ItemDetailContainer/>} />
           <Route path="/cart" element={<Cart/>} /> 
           <Route path="/checkout" element={<Checkout />} />

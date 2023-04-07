@@ -79,6 +79,7 @@
 
 .item__detail__description {
     text-align: left;
+    color: var(--gray);
     max-width: 50ch;
 }
 

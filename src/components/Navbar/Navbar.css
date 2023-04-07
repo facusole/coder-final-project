@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding-block: 1rem;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid var(--mediumgray);
 }
 
 .brand__container {

@@ -38,7 +38,7 @@ export default function ItemDetail({ item }) {
     return (
         <div>
 
-            {isLoading ? <h2>Loading...</h2>
+            {isLoading ? <h2 className="loader">Loading...</h2>
                 :
                 <div className="item__detail_container mg__inline">
                     <span><button className="go__back__btn" onClick={handleBack}><ArrowLeft size={24} /></button></span>

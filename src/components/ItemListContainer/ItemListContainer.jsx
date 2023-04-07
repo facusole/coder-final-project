@@ -52,7 +52,7 @@ export default function ItemListContainer() {
         <>
 
             {isLoading ?
-                <h2>Cargando...</h2>
+                <h2 className='loader'>Loading...</h2>
                 :
                 <ItemList productos={productos} />
             }

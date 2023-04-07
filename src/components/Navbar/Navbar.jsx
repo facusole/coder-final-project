@@ -23,14 +23,6 @@ export default function Navbar() {
             </div>
             <div>
                 <Link to='/cart'><CartWidget /></Link>
-                {/* <ul className="menu__container">
-                    <li><Link to="/category/juegos-de-mesa" className="categories">Juegos de mesa</Link></li>
-                    <li><Link to="/category/utiles-escolares" className="categories">Útiles escolares</Link></li>
-                    <li><Link to="/category/cuadernos" className="categories">Cuadernos</Link></li>
-                    <li className="shopping__cart">
-                        
-                    </li>
-                    </ul> */}
             </div>
         </nav>
     )

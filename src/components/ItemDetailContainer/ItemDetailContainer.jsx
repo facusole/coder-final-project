@@ -32,7 +32,7 @@ export default function ItemDetailContainer() {
     return (
         <div className="contenedor">
             {
-                isLoading ? <h2>Loading...</h2>
+                isLoading ? <h2 className="loader">Loading...</h2>
                 :
                 <ItemDetail item={item}/>
             }

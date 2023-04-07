@@ -138,3 +138,14 @@ li {
   place-content: center;
 }
 
+.loader {
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  animation: loader 2s linear infinite;
+}
+
+@keyframes loader {
+  50% {color: var(--green)}
+}
+

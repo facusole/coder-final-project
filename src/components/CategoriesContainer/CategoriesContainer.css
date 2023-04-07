@@ -17,7 +17,7 @@
 .section__heading {
     display: inline;
     padding-block: 1rem;
-    border-bottom: 1px solid var(--darkerblue);
+    border-bottom: 2px solid var(--darkerblue);
 }
 
 .categories__container {

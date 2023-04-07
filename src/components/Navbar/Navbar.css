@@ -33,6 +33,10 @@
     width: 13rem;
 }
 
+.searchbar__input::placeholder {
+    color: var(--gray);
+}
+
 @media (min-width: 768px) {
     .searchbar__input {
         width: 20rem;

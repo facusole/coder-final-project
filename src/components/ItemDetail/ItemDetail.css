@@ -40,7 +40,7 @@
 }
 
 .item__detail__img {
-    width: 15rem;
+    width: 10rem;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
@@ -78,6 +78,7 @@
 }
 
 .item__detail__description {
+    text-align: left;
     max-width: 50ch;
 }
 

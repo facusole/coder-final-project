@@ -30,11 +30,9 @@ export default function Cart() {
                 ))
             }
 
-
-
             {
                 cart.length == 0
-                    ? <h2 className='empty__cart__header'>Tu carrito está vacío, ve a llenarlo!</h2>
+                    ? <h2 className='empty__cart__header'>¡Tu carrito está vacío, ve a llenarlo!</h2>
                     : <div className='cart__footer'>
                         <h3 className='cart__total'>Total: <span className="cart__total__price">${totalPrice().toFixed(2)}</span></h3>
                         <Link to={'/checkout'} className='cart__cta'><CTAbutton description={'Finalizar compra'} /></Link>

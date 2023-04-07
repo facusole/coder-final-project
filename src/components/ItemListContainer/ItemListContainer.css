@@ -1,8 +1,8 @@
 .itemList__container {
     display: grid;
-    place-content: center;
-    align-content: center;
     margin-block: 3rem;
+    height: 100dvh;
+
     gap: 2rem;
 }
 

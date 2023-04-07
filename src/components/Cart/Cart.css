@@ -100,8 +100,8 @@
 }
 
 .empty__cart__header {
-    font-size: var(--fs-32);
+    font-size: var(--fs-20);
     font-weight: var(--fw-light);
-    color: var(--blue);
+    color: var(--gray);
     margin-block: 10.5rem;
 }

@@ -74,7 +74,7 @@ export default function Checkout() {
                 </picture>
                 <h2>¡Recibimos tu pedido!</h2>
                 <p>Una vez despachado el pedido, te enviaremos el número de seguimiento vía mail.</p>
-                <p>Guardá tu número de órden: #{orderId}</p>
+                <p>Guardá tu número de órden: <span onClick={() => navigator.clipboard.writeText(`#${orderId}`)} className="checkout__orderId">#{orderId}</span></p>
                 <span><Link className='checkout__success__cta' to='/'>Volver al inicio</Link></span>
             </div>
         )

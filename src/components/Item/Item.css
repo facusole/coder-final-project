@@ -6,6 +6,12 @@
     scroll-snap-align: center;
 }
 
+.item__card__img {
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
+
+
 .item__description {
     display: flex;
     flex-direction: column;
@@ -42,4 +48,3 @@
     background-color: var(--green-hover);
     scale: 1.02;
 }
-

@@ -108,7 +108,20 @@
 
 .checkout__success__container > p {
     width: 35ch;
+    color: var(--gray);
 }
+
+.checkout__orderId {
+    color: var(--green);
+    font-size: var(--fs-20);
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.checkout__orderId:hover {
+    color: var(--green-hover);
+}
+
 
 .checkout__success__img {
     margin-inline: auto;

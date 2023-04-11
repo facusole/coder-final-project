@@ -64,35 +64,35 @@
 @media (min-width: 1140px) {
 
     .welcome__btn {
-        right: 13rem;
+        right: 11rem;
     }
 }
 
 @media (min-width: 1300px) {
         
     .welcome__btn {
-        right: 18rem;
+        right: 16rem;
     }
 }
 
 @media (min-width: 1350px) {
         
     .welcome__btn {
-        right: 20rem;
+        right: 18rem;
     }
 }
 
 @media (min-width: 1430px) {
         
     .welcome__btn {
-        right: 22rem;
+        right: 21rem;
     }
 }
 
 @media (min-width: 1460px) {
         
     .welcome__btn {
-        right: 36rem;
+        right: 34rem;
     }
 }
 

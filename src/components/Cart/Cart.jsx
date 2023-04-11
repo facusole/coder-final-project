@@ -35,7 +35,7 @@ export default function Cart() {
             {
                 cart.length == 0
                     ? <article className='center empty__state'>
-                        <img src={emptyState} alt="Icono de un carrito para dar a entender que el carrito de compras está vacío" />
+                        <img classname='empty__state__icon' src={emptyState} alt="Icono de un carrito para dar a entender que el carrito de compras está vacío" />
                         <h2 className='empty__cart__header'>¡Tu carrito está vacío, ve a llenarlo!</h2>
                     </article>
                     : <div className='cart__footer'>

@@ -105,6 +105,18 @@
     place-items: center;
 }
 
+.empty__state > img {
+    aspect-ratio: 1/1;
+    width: 13rem;
+}
+
+@media (min-width: 768px) {
+    .empty__state > img {
+        aspect-ratio: 1/1;
+        width: 17.5rem;
+    }
+}
+
 .empty__cart__header {
     font-size: var(--fs-20);
     font-weight: var(--fw-light);

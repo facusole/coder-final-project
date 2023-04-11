@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 import { Trash } from 'iconsax-react'
 import CTAbutton from '../CTAbutton/CTAbutton'
+import emptyState from '../../assets/emptyState.webp'
+
 import './Cart.css'
 
 export default function Cart() {
@@ -32,7 +34,10 @@ export default function Cart() {
 
             {
                 cart.length == 0
-                    ? <h2 className='empty__cart__header'>¡Tu carrito está vacío, ve a llenarlo!</h2>
+                    ? <article className='center empty__state'>
+                        <img src={emptyState} alt="Icono de un carrito para dar a entender que el carrito de compras está vacío" />
+                        <h2 className='empty__cart__header'>¡Tu carrito está vacío, ve a llenarlo!</h2>
+                    </article>
                     : <div className='cart__footer'>
                         <h3 className='cart__total'>Total: <span className="cart__total__price">${totalPrice().toFixed(2)}</span></h3>
                         <Link to={'/checkout'} className='cart__cta'><CTAbutton description={'Finalizar compra'} /></Link>

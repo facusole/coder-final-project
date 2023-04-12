@@ -8,11 +8,9 @@ export default function CartProvider( {children} ) {
     const init = JSON.parse(localStorage.getItem('cart')) || []
 
     const [cart, setCart] = useState(init)
-    console.log(cart)
 
     const handleAddItem = (item) => {
         setCart([...cart, item])
-        console.log(cart)
     }
 
     const isInCart = (id) => cart.some(prod => prod.id === id)

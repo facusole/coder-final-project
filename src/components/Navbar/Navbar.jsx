@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import CartWidget from './CartWidget/CartWidget';
 import BrandLogo from '../../assets/pluma-logo.webp'
-import { collection, getDocs, query, where } from 'firebase/firestore'
+import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../../firebase/config'
 
 
@@ -68,19 +68,12 @@ export default function Navbar({ input, setInput }) {
         setInput(e.target.value)
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-
-        if (filtered[0])
-            navigate(`/item/${filtered[0].id}`)
-    }
-
     return (
         <nav className='navbar__container mg__inline'>
             <div className="brand__container">
                 <Link to='/'><img src={BrandLogo} aria-label='Pluma de Papel' className='brand__logo' alt="Logo de la marca Pluma de papel" /></Link>
             </div>
-            <form onSubmit={handleSubmit} className="searchBar__container">
+            <form className="searchBar__container">
                 <label htmlFor="searchbar" className='visually-hidden'>Buscá tu producto deseado</label>
 
                 <input type="search"

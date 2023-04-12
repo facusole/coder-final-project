@@ -26,7 +26,7 @@ export default function ItemDetailContainer() {
                 })
             })
             .finally(() => setIsLoading(false))
-    }, [])
+    }, [itemId])
 
     return (
         <div className="contenedor">

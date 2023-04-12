@@ -6,9 +6,11 @@ import { db } from '../../firebase/config'
 
 
 import './Navbar.css';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar({ input, setInput }) {
+
+    const navigate = useNavigate()
 
     const [allProducts, setAllProducts] = useState([])
     const [filtered, setFiltered] = useState([])
@@ -59,7 +61,7 @@ export default function Navbar({ input, setInput }) {
     const resetInput = () => {
         setInput('')
         setFiltered([])
-      }
+    }
 
     const handleChange = (e) => {
         setFiltered(filterSearch(e.target.value))
@@ -68,10 +70,10 @@ export default function Navbar({ input, setInput }) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        
-        if(filtered[0]) 
-          Navigate(`/item/${filtered[0].id}`)
-      }
+
+        if (filtered[0])
+            navigate(`/item/${filtered[0].id}`)
+    }
 
     return (
         <nav className='navbar__container mg__inline'>
@@ -80,27 +82,27 @@ export default function Navbar({ input, setInput }) {
             </div>
             <form onSubmit={handleSubmit} className="searchBar__container">
                 <label htmlFor="searchbar" className='visually-hidden'>Buscá tu producto deseado</label>
-                
-                    <input type="search"
-                        value={input}
-                        onChange={handleChange}
-                        autoComplete='off'
-                        spellCheck='off'
-                        placeholder='Buscar'
-                        aria-label='Ingresá lo que estás buscando'
-                        name="Searchbar"
-                        className='searchbar__input'
-                        id="searchbar" />
-                    <ul className='searchbar__dropdown'>
-                        {
-                            filtered.slice(0, 5).map(prod => (
-                                <li key={prod.name}>
-                                    <Link className='searchbar__product' to={`/item/${prod.id}`}><span onClick={resetInput}>{prod.name}</span></Link>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                
+
+                <input type="search"
+                    value={input}
+                    onChange={handleChange}
+                    autoComplete='off'
+                    spellCheck='off'
+                    placeholder='Buscar'
+                    aria-label='Ingresá lo que estás buscando'
+                    name="Searchbar"
+                    className='searchbar__input'
+                    id="searchbar" />
+                <ul className='searchbar__dropdown'>
+                    {
+                        filtered.slice(0, 5).map(prod => (
+                            <li key={prod.name}>
+                                <Link className='searchbar__product' to={`/item/${prod.id}`}><span onClick={resetInput}>{prod.name}</span></Link>
+                            </li>
+                        ))
+                    }
+                </ul>
+
             </form>
             <div>
                 <Link to='/cart'><CartWidget /></Link>

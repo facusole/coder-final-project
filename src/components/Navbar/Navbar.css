@@ -63,15 +63,23 @@
     padding: 0;
     position: absolute;
     left: 0;
-    border: var(--lightgray) 1px solid;
+    border: var(--mediumgray) 1px solid;
     border-radius: 1rem;
 }
 
-.searchbar__dropdown > li {
-    padding: 1rem;
-    width: 13rem;
-    background-color: var(--white);
-}
+    .searchbar__dropdown > li {
+        padding: 1rem;
+        width: 13rem;
+        background-color: var(--white);
+    }
+
+    .searchbar__dropdown > li:hover,
+    .searchbar__dropdown > li:hover > .searchbar__product {
+        color: var(--green);
+        background-color: var(--lightgreen);
+    }
+
+
 
 .searchbar__product {
     color: var(--gray);

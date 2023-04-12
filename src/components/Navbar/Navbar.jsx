@@ -97,7 +97,7 @@ export default function Navbar({ input, setInput }) {
                     {
                         filtered.slice(0, 5).map(prod => (
                             <li key={prod.name}>
-                                <Link className='searchbar__product' to={`/item/${prod.id}`}><span onClick={resetInput}>{prod.name}</span></Link>
+                                <Link className='searchbar__product' to={`/item/${prod.id}`}><div onClick={resetInput}>{prod.name}</div></Link>
                             </li>
                         ))
                     }
